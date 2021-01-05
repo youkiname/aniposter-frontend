@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import PostPage from '../views/PostPage.vue'
 import ProfilePage from '../views/ProfilePage.vue'
+import AdminPage from '../views/AdminPage.vue'
+import UserControlPanel from '../views/UserControlPanel.vue'
 
 Vue.use(VueRouter)
 
@@ -11,6 +13,16 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/adminka',
+    name: 'AdminPage',
+    component: AdminPage
+  },
+  {
+    path: '/adminka/user-control-panel/:user_id',
+    name: 'UserControlPanel',
+    component: UserControlPanel
   },
   {
     path: '/post/:post_id',
