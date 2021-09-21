@@ -40,11 +40,6 @@ Vue.use(VueRouter)
     component: () => import('../views/CommentsRules.vue')
   },
   {
-    path: '/chat-rules',
-    name: 'ChatRules',
-    component: () => import('../views/ChatRules.vue')
-  },
-  {
     path: '/bot-info',
     name: 'BotInfo',
     component: () => import('../views/BotInfo.vue')
